@@ -205,6 +205,7 @@
       text-align: center;
     }
 
+    /*ukuran layar 3*/
     .hero h2 {
       font-size: 30px;
       font-weight: 800;
@@ -318,12 +319,12 @@
     }
 
     .badge.left {
-      left: 24px;
+      left: 10%;
       top: 30%;
     }
 
     .badge.right {
-      right: 24px;
+      right: 24%;
       top: 45%;
     }
 
@@ -442,6 +443,7 @@
       row-gap: 56px;
     }
 
+    /*ukuran layar 4*/
     @media (min-width: 992px) {
       .menu-grid {
         max-width: 1000px;
@@ -451,6 +453,7 @@
         /* ✅ desktop 4 col */
         gap: 14px;
         row-gap: 64px;
+
       }
     }
 
@@ -763,18 +766,19 @@
     /* Floating WhatsApp */
     .wa-float {
       position: fixed;
-      bottom: 20px;
+      bottom: 50px;
+      /*semakin naik = semain ke atas*/
       right: 20px;
       background: #25D366;
-      width: 56px;
-      height: 56px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       color: #fff;
       font-size: 26px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
       text-decoration: none;
       z-index: 70;
       animation: pulse 1.8s infinite;
@@ -803,11 +807,14 @@
 
       /*body{ align-items:flex-start; }*/
 
+      /*ukuran layar 1*/
       .container {
         min-height: auto;
-        border-radius: 18px;
+        border-radius: 0px;
+        /*sudut agar melengkung*/
+        width: min(5000px, 100vw);
         box-shadow: 0 18px 50px rgba(0, 0, 0, .08);
-        margin: 28px 14px;
+        margin-inline: auto;
       }
 
       .menu {
@@ -830,11 +837,12 @@
         padding: 10px 0 0;
       }
 
+      /*ukuran layar 2*/
       .home-desktop-wrap {
         display: grid;
         grid-template-columns: 1.15fr .85fr;
-        align-items: start;
-        gap: 24px;
+        align-items: center;
+        gap: 32px;
         padding: 28px 32px 0;
       }
 
